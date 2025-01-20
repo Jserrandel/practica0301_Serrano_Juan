@@ -5,11 +5,20 @@
 #n = (1, 10, 20, 30 y 40) por fuerza bruta.
 import time
 def fibonacci_recursivo(n):
+
+    '''recibe un número entero 
+positivo n y calcule el número de fibonacci asociado a ese número 
+de manera recursiva'''
+
     if n <= 1:  
         return n
     return fibonacci_recursivo(n - 1) + fibonacci_recursivo(n - 2)
 
 def fibonacci_iterativo(n):
+
+    '''reciba un número entero 
+positivo n y calcule el número de fibonacci asociado con bucles'''
+
     if n <= 1:  
         return n
     a, b = 0, 1 
@@ -35,4 +44,3 @@ else:
     print(f"\nResultados para n = {n}:")
     print(f"Fibonacci (recursivo): {resultado_recursivo}, Tiempo: {tiempo_recursivo:.6f} segundos")
     print(f"Fibonacci (iterativo): {resultado_iterativo}, Tiempo: {tiempo_iterativo:.6f} segundos")
-    
